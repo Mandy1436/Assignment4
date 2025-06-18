@@ -5,37 +5,21 @@ In this python program, we will try to read the content of a text file(which is 
 1. Start a try block
 
 The code begins with a try: statement. This means Python will try to run the code inside this block. If there is an error (like the file not being found), it will jump to the except block.
-
 2. Open the file
-
 file1 = open('sample.txt', 'r')
-
 This line tries to open a file named sample.txt in read mode ('r').
-
 If the file exists, it is opened and assigned to the variable file1.
-
 3. Read the file
-
 reading_file = file1.read()
-
 This reads the entire contents of sample.txt and stores it in the variable reading_file.
-
 4. Print the file content
-
 print(reading_file)
-
 This prints whatever was read from the file to the screen.
-
 5. Handle file not found error
-
 If sample.txt does not exist, Python raises a FileNotFoundError.
-
 The code jumps to the except FileNotFoundError: block.
-
 6. Print error message
-
 print("The File sample.txt was not found.")
-
 This line runs only if the file was not found. It shows a clear message instead of crashing the program.
 
 #Task 2
